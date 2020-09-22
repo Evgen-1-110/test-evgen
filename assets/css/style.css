@@ -1,0 +1,506 @@
+﻿@font-face {
+    font-family: "Yummo W03 Bold";
+    src: url("../fonts/Yummo W03 Bold/Yummo W03 Bold.eot"); /* IE9*/
+    src: url("../fonts/Yummo W03 Bold/Yummo W03 Bold-1.eot") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/Yummo W03 Bold/Yummo W03 Bold.bin") format("woff2"), /* chrome、firefox */
+    url("../fonts/Yummo W03 Bold/Yummo W03 Bold.woff") format("woff"), /* chrome、firefox */
+    url("../fonts/Yummo W03 Bold/Yummo W03 Bold-1.bin") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("../fonts/Yummo W03 Bold/Yummo W03 Bold.svg") format("svg"); /* iOS 4.1- */
+}
+
+@font-face {
+    font-family: "Smoothie Shoppe";
+    url("../fonts/SmoothieShoppe/smoothie_shoppe-webfont.woff") format("woff"),
+    url("../fonts/SmoothieShoppe/smoothie_shoppe-webfont.bin") format("woff2"),
+    url("../fonts/SmoothieShoppe/Smoothie-Shoppe.bin") format("truetype");
+}
+
+@font-face {
+    font-family: "Open Sans";
+url("../fonts/OpenSans/opensans-regular-webfont.woff") format("woff"),
+url("../fonts/OpenSans/opensans-regular-webfont.bin") format("woff2"),
+url("../fonts/OpenSans/OpenSans-Regular.bin") format("truetype");
+}
+
+body{
+    font-size:16px;
+}
+
+#logo {
+    position: absolute;
+    top: 38px;
+    left: 7%;
+}
+
+#logo img{
+    width: 156px;
+    height: 54px;
+}
+
+.force-white {
+    filter: brightness(0) invert(1);
+}
+
+.w-89{ width: 89%; }
+.letter-spacing { letter-spacing: -0.5px; }
+
+.p-xl-5{ padding: 1rem 1rem 2rem 1.5rem !important;}
+
+#banner {
+    height: auto;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    margin-bottom: 40px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    -webkit-box-shadow: 1px 10px 20px 0 rgba(0, 0, 0, 0.15);
+    -moz-box-shadow:    1px 10px 20px 0 rgba(0, 0, 0, 0.15);
+    box-shadow:         1px 10px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+#recipe-banner {
+    height: 80vh;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    margin-bottom: 40px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    -webkit-box-shadow: 1px 10px 20px 0 rgba(0, 0, 0, 0.15);
+    -moz-box-shadow:    1px 10px 20px 0 rgba(0, 0, 0, 0.15);
+    box-shadow:         1px 10px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+#banner-video {
+    width: 100%;
+}
+
+#banner-placeholder {
+    font-size: 36px;
+    color: #C12236;
+    line-height: 40px;
+    font-family: "Yummo W03 Bold", sans-serif;
+    text-transform: uppercase;
+}
+
+#banner-inner-container {
+    text-align: center;
+    margin-top: 150px;
+    color: white;
+}
+
+#banner-title {
+    font-size: 2.5rem;
+    font-family: "Yummo W03 Bold", sans-serif;
+    text-transform: uppercase;
+}
+
+#banner-desc {
+    font-size: 2.3rem;
+    line-height: 80px;
+    font-family: "Smoothie Shoppe", sans-serif;
+}
+
+#inner-container-home {
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 225px;
+    background-image: url("../img/pattern.png");
+}
+
+#inner-container-recipe {
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 173px;
+}
+
+.recipe-ingredients-title {
+    text-align: center;
+    font-size: 2.8rem;
+    color: #C12236;
+    font-family: "Yummo W03 Bold", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 57px;
+}
+
+.recipe-ingredients-title::before, .recipe-ingredients-title::after {
+    content: '';
+    width: 30px;
+    height: 5px;
+    display: inline-block;
+    background-color: #C12236;
+    vertical-align: middle;
+    border-radius: 2px;
+}
+
+#recipe-author-inner-container {
+    width: 292px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#recipe-author-image {
+    max-width:100%;
+    width: 202px;
+    height: 202px;
+    border-radius: 50%;
+    margin-bottom: 7px;
+}
+
+#recipe-author-name {
+    font-size: 1.8rem;
+    color: #707070;
+    font-family: "Smoothie Shoppe", sans-serif;
+    margin-bottom: 7px;
+}
+
+#recipe-ingredients-list {
+    font-size: 1.1rem;
+    line-height: 35px;
+    color: #C12236;
+    font-family: "Yummo W03 Bold", sans-serif;
+}
+
+#recipe-ingredients-illustration img {
+    max-width: 100%;
+}
+
+.recipe-ingredients-list-title {
+    font-size: 1.5rem;
+}
+
+#recipe-ingredients-list ul {
+    list-style-type: none;
+    padding: initial;
+}
+
+#recipe-ingredients-list ul:not(:last-child) {
+    margin-bottom: 37px;
+}
+
+#recipe-author-desc {
+    font-size: 0.9rem;
+    color: #B4B4B4;
+    line-height: 24px;
+    font-family: "Open Sans", sans-serif;
+}
+
+#recipe-desc {
+    font-size: 1rem;
+    color: #6C6C6C;
+    line-height: 23px;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 65px;
+}
+#recipe-desc.has-padding{
+    padding-right: 2.1rem;
+}
+#recipe-desc.has-padding-bigger{
+    padding-right: 2.3rem;
+}
+
+.block {
+    border-radius: 13px;
+    /* overflow: hidden; */
+    background-color: white;
+
+    -webkit-box-shadow: 1px 10px 20px 0 rgba(0, 0, 0, 0.15);
+    -moz-box-shadow:    1px 10px 20px 0 rgba(0, 0, 0, 0.15);
+    box-shadow:         1px 10px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+.recipe-badge {
+    position: absolute;
+    z-index: 5000;
+    width: 110px;
+}
+
+.recipe-badge img{
+    max-width: 100%;
+}
+
+.block-content-left .recipe-badge {
+    top: -18px;
+    right: -43px;
+}
+
+.block-content-right .recipe-badge {
+    top: -20px;
+    right: -8px;
+}
+
+.block-content-bottom .recipe-badge {
+    bottom: calc(100% - 63px);
+    right: -25px;
+}
+
+#blocks-right .block-content {
+    padding-top: 7px;
+}
+
+.block-title-primary {
+    font-size: 1.75rem;
+    color: #C12236;
+    font-family: "Yummo W03 Bold", sans-serif;
+    line-height: 40px;
+    margin-right: -45px;
+    max-width: 100%;
+    margin-bottom: 0;
+}
+
+.block-title-secondary {
+    font-size: 1.1rem;
+    color: #C12236;
+    font-family: "Yummo W03 Bold", sans-serif;
+    line-height: 30px;
+}
+
+.block-desc {
+    font-size: 1rem;
+    color: #848181;
+    line-height: 20px;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 0;
+}
+
+#blocks-left .block:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.block-img {
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+
+    -webkit-box-shadow: 1px 10px 20px 0 rgba(0, 0, 0, 0.15);
+    -moz-box-shadow:    1px 10px 20px 0 rgba(0, 0, 0, 0.15);
+    box-shadow:         1px 10px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+.block-img-left {
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+}
+
+.block-img-right {
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+}
+
+.block-img-top {
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+}
+
+#blocks-right .block {
+    height: 50%;
+}
+
+#blocks-right .block:not(:last-child) {
+    height: calc(50% - 16px);
+    margin-bottom: 16px;
+}
+
+#blocks-right .block .block-img {
+    height: 50%;
+}
+
+#blocks-right .block .block-content {
+    height: 50%;
+}
+
+#blocks-full {
+    margin-top: 27px;
+}
+
+@media (max-width: 1025px) {
+    .block-title-primary {
+        font-size: 1.7rem;
+    }
+
+    .block-title-secondary, #recipe-ingredients-list {
+        font-size: 1.1rem;
+    }
+
+    .block-desc {
+        font-size: 0.9rem;
+    }
+
+    #blocks-right .block .block-img {
+        height: 40%;
+    }
+    #blocks-right .block .block-content {
+        height: 60%;
+    }
+
+    .recipe-badge{
+        width:80px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .p-xl-5{ padding: 2rem 3rem 2rem 3rem !important;}
+
+    .block-title-primary {
+        font-size: 2.3rem;
+        margin-bottom: 1rem;
+    }
+    .block-title-secondary{
+        font-size: 1.6rem;
+    }
+    .block-desc{
+        font-size:1.3rem;
+        line-height: 25px;
+    }
+    .block-desc.pr-2{
+        padding-right: 1rem !important;
+    }
+    .w-89{ width:88%;}
+
+    #blocks-right .block-content{
+        padding-top:18px;
+    }
+    #blocks-right .block-title-primary, #blocks-right .block-title-secondary, #blocks-right .block-desc{
+        padding-left: 2.3rem;
+    }
+
+    #banner-title{
+        font-size: 3rem;
+    }
+    #banner-desc{
+        font-size:2.5rem;
+    }
+    #recipe-ingredients-list{
+        font-size: 1.4rem;
+        line-height: 40px;
+    }
+    #recipe-desc{
+        font-size: 1.4rem;
+        line-height: 30px;
+    }
+    #recipe-author-desc{
+        font-size: 1rem;
+    }
+    #blocks-right .block .block-img {
+        height: 47%;
+    }
+}
+
+@media (min-width: 1600px) and (max-width:1700px) {
+    .block-title-primary{
+        font-size: 1.9rem;
+    }
+    .block-title-secondary {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 1281px) and (min-width: 1025px)  {
+    .block-title-primary {
+        font-size:1.65rem;
+    }
+    .block-title-secondary{
+        font-size: 1.1rem;
+    }
+    #blocks-right .block .block-img{
+        height: 45%;
+    }
+}
+
+@media (max-width: 991px) {
+    #inner-container-home {
+        padding: inherit;
+    }
+
+    #inner-container-recipe {
+        padding-left: inherit;
+        padding-right: inherit;
+        padding-bottom: 173px;
+    }
+}
+
+@media (max-width: 768px) {
+    .block-title-primary {
+        font-size: 1.5rem;
+        margin-right: 0;
+    }
+
+    .block-title-secondary {
+        font-size: 1rem;
+    }
+
+    .block-desc {
+        font-size: 0.9rem;
+    }
+
+    #blocks-right .block .block-img {
+        height: 40vh;
+        border-radius: 13px;
+    }
+
+    .block-img-left, .block-img-right{
+        min-height: 40vh;
+        border-radius: 13px;
+    }
+
+    .block-content-left .recipe-badge {
+        right: 0;
+        bottom: calc(100% - 63px);
+    }
+
+    .block-content-right .recipe-badge {
+        right: 0;
+        bottom: calc(100% - 63px);
+    }
+
+    .block-content-bottom .recipe-badge {
+        right: 0;
+        bottom: calc(100% - 63px);
+    }
+
+    .background-position-top{
+        background-position: top;
+    }
+
+    #recipe-ingredients-illustration{
+        background-image: url("../img/ingredients-havas.png");
+        background-size: contain;
+    }
+    #blocks-right .block .block-content {
+        padding: 1rem 1rem 2rem 1.5rem !important;
+    }
+    #blocks-right .block{
+        height: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .recipe-ingredients-title{
+        font-size: 1.8rem;
+    }
+
+    .w-89{width:100%;}
+    #recipe-desc.has-padding, #recipe-desc.has-padding-bigger{
+        padding-right: inherit;
+    }
+}
+
+@media (max-width: 576px) {
+    #blocks-right .block .block-content{
+        height: 55%;
+    }
+    .block-title-primary {
+        font-size: 1.3rem;
+    }
+}
